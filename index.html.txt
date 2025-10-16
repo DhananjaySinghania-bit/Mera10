@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhananjay - Personal Website</title>
+<link rel="manifest" href="manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+/* --- Same CSS as your final attractive version --- */
+/* Add all styling from your previous HTML for header, sections, cards, buttons, footer, etc. */
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Dhananjay</h1>
+    <p>Empowering Change through Knowledge and Action</p>
+</header>
+
+<!-- About -->
+<section id="about">
+    <img src="https://i.ibb.co/6cyBqXqK/IMG-17587904377989531.png" alt="Dhananjay">
+    <h2>About Me</h2>
+    <p>Hi! I'm Dhananjay, passionate about technology, education, and social reform. I strive to create impactful solutions that bridge gaps and foster inclusive growth.</p>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card-container">
+        <div class="card"><i class="fas fa-paint-brush"></i> Graphics Designing</div>
+        <div class="card"><i class="fab fa-html5"></i> HTML & CSS</div>
+        <div class="card"><i class="fas fa-robot"></i> AI Based Work</div>
+        <div class="card"><i class="fas fa-project-diagram"></i> Architecting</div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card-container">
+        <div class="card">App building Ongoing ⏸️</div>
+        <div class="card">Website ✅</div>
+        <div class="card">Business card & logo ✅</div>
+        <div class="card">More…</div>
+    </div>
+</section>
+
+<!-- Note -->
+<section id="note">
+    <h2>Note</h2>
+    <div class="message">
+&gt; Hello!  
+If you truly want to become successful, you must apply the (wwwH)-rule in your life. Without it, success will remain out of reach. People may misunderstand you, no matter which field you are in—whether it’s academics, your career, or any other area.
+
+Remember, success isn’t measured by how much money you have. True success comes when your actions inspire others or improve lives because of you.
+
+This (wwwH)-rule is unique and cannot be found on the internet or anywhere else—it has been created by me personally to help people.
+
+To understand what the (wwwH)-rule is and how to apply it in your daily life, contact us.👇🏼
+    </div>
+</section>
+
+<!-- Buttons -->
+<section class="buttons">
+    <a href="mailto:iimmenseaiexperts@gmail.com" class="email"><i class="fas fa-envelope"></i> Email</a>
+    <a href="tel:+919219671761" class="phone"><i class="fas fa-phone"></i> Phone</a>
+    <a href="https://www.instagram.com/cosmos_reformist" target="_blank" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+</section>
+
+<footer>
+    &copy; 2025 Dhananjay. All rights reserved.
+</footer>
+
+<script>
+    // Scroll fade-in effect
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+        const triggerBottom = window.innerHeight * 0.85;
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            if(sectionTop < triggerBottom){
+                section.classList.add('visible');
+            }
+        });
+    });
+
+    // PWA Service Worker registration
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('Service Worker Registered'));
+    }
+</script>
+
+</body>
+</html>
